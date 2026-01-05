@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dubai Settling-In Concierge | Premium Relocation</title>
+  <meta name="description" content="Premium Dubai relocation concierge: DEWA, Ejari, Emirates ID, school search and full arrival support. Land in Dubai — already home." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, .font-serif { font-family: 'Playfair Display', serif; }
+    .page { display: none; }
+    .page[aria-hidden="false"] { display: block; }
+    .nav-link.active { color: #2563eb; border-bottom: 2px solid #2563eb; }
+    /* Reduce very large type on small viewports */
+    @media (max-width: 640px) {
+      .hero-title { font-size: 2.25rem; line-height: 1.05; }
+    }
+    /* Respect user's reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-[#F8F9FA] text-slate-800">
+
+  <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+      <div class="text-2xl font-black text-slate-900 tracking-tighter italic" aria-label="Dubai Concierge logo">
+        DUBAI<span class="text-blue-600">CONCIERGE</span>
+      </div>
+
+      <nav aria-label="Primary" class="hidden md:flex space-x-10 text-sm font-bold uppercase tracking-widest text-slate-600">
+        <a href="#home" class="nav-link active py-2 transition" data-page="home" id="link-home" aria-current="page">Home</a>
+        <a href="#packages" class="nav-link py-2 transition" data-page="packages" id="link-packages">Packages</a>
+        <a href="#guide" class="nav-link py-2 transition" data-page="guide" id="link-guide">Survival Guide</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button class="hidden md:inline-block bg-slate-900 text-white px-8 py-3 rounded-full text-sm font-bold hover:bg-blue-600 transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Book consultation">
+          BOOK CONSULTATION
+        </button>
+
+        <!-- Mobile nav button (optional) -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" class="text-slate-900"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Simple mobile menu -->
+    <div id="mobile-menu" class="md:hidden px-6 pb-4 hidden" role="dialog" aria-modal="false">
+      <div class="flex flex-col space-y-2 text-sm font-bold uppercase tracking-widest text-slate-600">
+        <a href="#home" class="py-2" data-page="home">Home</a>
+        <a href="#packages" class="py-2" data-page="packages">Packages</a>
+        <a href="#guide" class="py-2" data-page="guide">Survival Guide</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Home/hero section -->
+    <section id="home" class="page active relative h-[85vh] flex items-center px-6 overflow-hidden bg-slate-900" role="region" aria-labelledby="home-heading" aria-hidden="false">
+      <div class="absolute inset-0 opacity-40" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920" alt="" aria-hidden="true" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="relative max-w-7xl mx-auto w-full z-10 text-white">
+        <span class="text-blue-400 font-bold tracking-[0.3em] uppercase mb-4 block">Exclusive Relocation Support</span>
+        <h1 id="home-heading" class="hero-title text-6xl md:text-8xl mb-8 leading-tight">Land in Dubai.<br><span class="italic">Already Home.</span></h1>
+        <p class="text-xl max-w-xl text-slate-300 mb-10 leading-relaxed">We manage your DEWA, Ejari, and essentials before you even touch down. Experience the "First 48 Hours" without the stress.</p>
+        <div class="flex gap-4">
+          <a href="#packages" class="inline-block bg-blue-600 px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition transform text-center" data-page="packages">Explore Services</a>
+          <a href="#guide" class="inline-block bg-white/10 backdrop-blur-md border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition text-center" data-page="guide">Get Free Guide</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="page pt-20 pb-32" role="region" aria-labelledby="packages-heading" aria-hidden="true">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 id="packages-heading" class="text-5xl mb-4">Tailored Settlement Tiers</h2>
+          <p class="text-slate-500 max-w-2xl mx-auto">Choose the level of support that fits your move. From digital essentials to full-service medical and school placement.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-10">
+          <article class="bg-white p-10 rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50" aria-labelledby="starter-title">
+            <h3 id="starter-title" class="text-2xl font-serif mb-2">The Starter</h3>
+            <div class="text-blue-600 font-bold mb-6 italic text-sm">Digital & Utility Foundation</div>
+            <ul class="space-y-4 text-slate-600 mb-10">
+              <li class="flex items-center"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-blue-500" aria-hidden="true"></i> DEWA & Ejari Registration</li>
+              <li class="flex items-center"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-blue-500" aria-hidden="true"></i> Wi‑Fi & SIM Setup</li>
+              <li class="flex items-center"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-blue-500" aria-hidden="true"></i> Essential Area Guide</li>
+            </ul>
+            <button class="w-full py-4 bg-slate-50 border-2 border-slate-900 text-slate-900 rounded-2xl font-bold hover:bg-slate-900 hover:text-white transition">INQUIRE NOW</button>
+          </article>
+
+          <article class="bg-slate-900 p-10 rounded-[2rem] text-white shadow-2xl relative" aria-labelledby="hero-title">
+            <div class="absolute -top-5 right-10 bg-blue-600 px-6 py-2 rounded-full text-xs font-black tracking-widest uppercase">Signature</div>
+            <h3 id="hero-title" class="text-2xl font-serif mb-2">The Move-In Hero</h3>
+            <div class="text-blue-400 font-bold mb-6 italic text-sm">Full Arrival Comfort</div>
+            <ul class="space-y-4 text-slate-300 mb-10">
+              <li class="flex items-center"><i data-lucide="sparkles" class="w-5 h-5 mr-3 text-blue-400" aria-hidden="true"></i> Everything in Starter</li>
+              <li class="flex items-center"><i data-lucide="sparkles" class="w-5 h-5 mr-3 text-blue-400" aria-hidden="true"></i> Deep Cleaning & Handyman</li>
+              <li class="flex items-center"><i data-lucide="sparkles" class="w-5 h-5 mr-3 text-blue-400" aria-hidden="true"></i> Grocery Stock-up (Fresh Essentials)</li>
+            </ul>
+            <button class="w-full py-4 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-500 transition">MOST POPULAR</button>
+          </article>
+
+          <article class="bg-white p-10 rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50" aria-labelledby="elite-title">
+            <h3 id="elite-title" class="text-2xl font-serif mb-2">The Elite</h3>
+            <div class="text-blue-600 font-bold mb-6 italic text-sm">White-Glove Integration</div>
+            <ul class="space-y-4 text-slate-600 mb-10">
+              <li class="flex items-center"><i data-lucide="award" class="w-5 h-5 mr-3 text-blue-500" aria-hidden="true"></i> Everything in Hero</li>
+              <li class="flex items-center"><i data-lucide="award" class="w-5 h-5 mr-3 text-blue-500" aria-hidden="true"></i> School Search & Tours</li>
+              <li class="flex items-center"><i data-lucide="award" class="w-5 h-5 mr-3 text-blue-500" aria-hidden="true"></i> Emirates ID & Medical Escort</li>
+              <li class="flex items-center"><i data-lucide="award" class="w-5 h-5 mr-3 text-blue-500" aria-hidden="true"></i> Bank Account Opening Guidance</li>
+            </ul>
+            <button class="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-600 transition">GO ELITE</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guide -->
+    <section id="guide" class="page py-20" role="region" aria-labelledby="guide-heading" aria-hidden="true">
+      <div class="max-w-4xl mx-auto px-6 bg-white rounded-[3rem] p-12 md:p-24 shadow-2xl border border-slate-50">
+        <div class="text-center">
+          <div class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold mb-6">FREE RESOURCE</div>
+          <h2 id="guide-heading" class="text-5xl mb-8 font-serif">The "First 48 Hours" Dubai Survival Guide</h2>
+          <p class="text-lg text-slate-500 mb-12">Our proprietary roadmap to landing in the UAE without the confusion. Includes a checklist for documents, transport, and immediate housing setups.</p>
+
+          <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200">
+            <h4 class="font-bold mb-4">Enter your details for the PDF</h4>
+            <form id="guide-form" class="space-y-4" novalidate>
+              <div>
+                <label for="fullName" class="sr-only">Full name</label>
+                <input id="fullName" name="fullName" type="text" required placeholder="Full Name" class="w-full mb-4 px-6 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none" />
+              </div>
+
+              <div>
+                <label for="email" class="sr-only">Email address</label>
+                <input id="email" name="email" type="email" required placeholder="Email Address" class="w-full mb-6 px-6 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none" />
+              </div>
+
+              <div>
+                <button type="submit" class="w-full py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-blue-600 transition">DOWNLOAD THE GUIDE</button>
+              </div>
+            </form>
+            <p id="form-msg" class="text-sm text-slate-500 mt-3 hidden" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-20 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center opacity-60">
+      <p class="text-sm">© 2026 Dubai Settling-In Concierge. Your premium partner in the UAE.</p>
+      <div class="flex space-x-6 mt-6 md:mt-0 text-xs font-bold uppercase tracking-widest">
+        <a href="#" rel="noopener">Privacy</a>
+        <a href="#" rel="noopener">Terms</a>
+        <a href="#" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Unobtrusive page navigation
+    document.addEventListener('DOMContentLoaded', function () {
+      // lucide icons
+      if (typeof lucide !== 'undefined' && lucide.createIcons) {
+        lucide.createIcons();
+      }
+
+      const pages = Array.from(document.querySelectorAll('.page'));
+      const links = Array.from(document.querySelectorAll('[data-page]'));
+      const mobileToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      function showPage(pageId, setFocus = true) {
+        pages.forEach(p => {
+          const isTarget = p.id === pageId;
+          p.setAttribute('aria-hidden', isTarget ? 'false' : 'true');
+        });
+        links.forEach(l => {
+          const isActive = l.dataset.page === pageId;
+          l.classList.toggle('active', isActive);
+          if (isActive) l.setAttribute('aria-current', 'page'); else l.removeAttribute('aria-current');
+        });
+        if (setFocus) {
+          const firstHeading = document.querySelector('#' + pageId + ' [id]');
+          if (firstHeading) firstHeading.focus({ preventScroll: true });
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // link clicks
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          const page = this.dataset.page;
+          if (!page) return;
+          e.preventDefault();
+          // close mobile menu if open
+          if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            mobileToggle && mobileToggle.setAttribute('aria-expanded', 'false');
+          }
+          showPage(page, true);
+        });
+      });
+
+      // mobile toggle
+      if (mobileToggle) {
+        mobileToggle.addEventListener('click', function () {
+          const visible = !mobileMenu.classList.contains('hidden');
+          mobileMenu.classList.toggle('hidden');
+          this.setAttribute('aria-expanded', String(!visible));
+        });
+      }
+
+      // Simple form handling (placeholder — integrate with your backend or email provider)
+      const guideForm = document.getElementById('guide-form');
+      const formMsg = document.getElementById('form-msg');
+      if (guideForm) {
+        guideForm.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          formMsg.classList.remove('hidden');
+          formMsg.textContent = 'Preparing your download...';
+
+          // Example: create a simple PDF download flow or call an API.
+          // For now, simulate success and provide a placeholder download link.
+          setTimeout(() => {
+            formMsg.innerHTML = 'Thanks! <a href="#" class="underline">Download your guide</a> (demo).';
+          }, 800);
+        });
+      }
+
+      // Initialize page to home
+      showPage('home', false);
+    });
+  </script>
+</body>
+</html>
